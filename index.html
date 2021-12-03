@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+    <script src = "script.js" defer></script>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <video autoplay loop muted id = "bgvideo">
+        <source src = "background.mp4" type = "video/mp4">
+    </video>
+
+    <div class = "flex-container">
+
+        <div class = "calculator">
+            <div class = "grid-item screen">(</div>
+            <button class = "ac btn horizontal-span-2" onclick = "input_AC()">AC</button>
+            <button class ="c btn" onclick = "input_C()">C</button>
+            <button class = "() btn" onclick = "input_bracket()">()</button>
+            <button class="^ btn" onclick = "input('^')">^</button>
+            <button class="/ btn" onclick = "input('/')">/</button>
+            <button class="* btn" onclick = "input('x')">x</button>
+            <button class="- btn" onclick = "input('-')">-</button>
+            <button class="7 btn" onclick = "input('7')">7</button>
+            <button class="8 btn" onclick = "input('8')">8</button>
+            <button class="9 btn" onclick = "input('9')">9</button>
+            <button class="+ btn vertical-span-2" onclick = "input('+')">+</button>
+            <button class="4 btn" onclick = "input('4')">4</button>
+            <button class="5 btn" onclick = "input('5')">5</button>
+            <button class="6 btn" onclick = "input('6')">6</button>
+            <button class="1 btn" onclick = "input('1')">1</button>
+            <button class="2 btn" onclick = "input('2')">2</button>
+            <button class="3 btn" onclick = "input('3')">3</button>
+            <button class="= btn vertical-span-2" onclick = "equal_to()">=</button>
+            <button class="0 btn horizontal-span-2" onclick = "input('0')">0</button>
+            <button class=". btn" onclick = "input('.')">.</button>
+        </div>
+
+        <div class = "other-stuff"></div>
+    </div>
+</body>
+</html>
